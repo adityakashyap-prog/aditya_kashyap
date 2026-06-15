@@ -1,0 +1,23 @@
+Scope_of_Work
+Responsive gaming-themed website
+Hero Showcase with featured games
+Discover Collections
+Genre Categories
+Trending Arena
+Play Zone (Coming Soon game showcase)
+New Horizons (New Releases)
+Future Releases
+Game Details Pages
+Wishlist Center (Local Storage)
+Gamer Profile
+Newsroom
+Community Hub
+Search & Filter Functionality
+Mobile, Tablet & Desktop Responsive Design
+
+Future Features (Not Included)
+User Authentication
+Browser-Based Games
+Achievement System
+Personalized Recommendations
+Community Accounts
