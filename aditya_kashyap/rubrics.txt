@@ -1,37 +1,42 @@
-Rubrics :-
+Rubrics:
 
-1. A complete React.js single-page application is delivered with all 13 required pages/sections built.
-2. The application is deployed live on Vercel with a publicly accessible URL that loads without errors or 404s.
-3. A public GitHub repository is provided with a commit history 
-4. The Global Navigation bar includes all 9 links: Discover, Collections, Genres, Community Hub, Newsroom, Support, Search, Wishlist, Profile.
-5. The Global Navigation is sticky (remains fixed and visible while scrolling on all pages) and includes a responsive mobile hamburger menu.
-6. The Hero Showcase is an interactive carousel containing 3–5 featured fictional games, where each slide displays artwork, game title, genre, rating, short description and an Explore button.
-7. The Hero Showcase carousel autoplays automatically and supports manual navigation via Swiper.js with prev/next controls and slide indicators.
-8. The Discover Collections section contains Swiper.js horizontal sliders for all 6 collections.
-9. The Explore Genres section displays a grid of all 10 genre cards (Action, Adventure, RPG, Racing, Strategy, Sports, Simulation, Sci-Fi, Fantasy, Indie) each with custom visual artwork.
-10. The Trending Arena section includes tabs or filters for all 4 views: Trending Games, Community Favorites, Most Viewed Titles, and Recommended Experiences, with game cards displaying cover artwork, rating, genre, and platform information.
-11. The Play Zone section displays exactly 3 game cards:- Memory Matrix, Quiz Quest, and Cyber Runner 
-12. Clicking any Play Zone card opens a modal popup displaying the exact "Coming Soon" message: "This gaming experience is currently under development. Stay tuned for future updates from GameVerse."
-13. The Play Zone modal can be dismissed both via a close button and by clicking the overlay background, with Framer Motion open/close animation.
-14. The New Horizons section displays newly released game concepts with artwork, release information, rating and summary.
-15. The Future Releases section displays upcoming titles with preview artwork, release window, genre and platform availability.
-16. A Game Details page exists at the route /game/:id and loads correctly for all 10 fictional games, displaying an overview (title, description, genre, release info, platforms), a media gallery with exactly 4 screenshots per game, a community insights section (rating summary and featured reviews), and a similar titles section.
-17. A Wishlist Center page exists at /wishlist where users can view all saved games and remove individual entries.
-18. Clicking "Add to Wishlist" on any game card or the Game Details page saves the game to browser local storage, and removing a game from the Wishlist page deletes it from local storage.
-19. The wishlist state persists correctly across a browser refresh (saved games are restored on reload from local storage).
-20. A Gamer Profile page exists at /profile, displaying avatar, username, favorite genres, wishlist statistics, and recently viewed games.
-21. A Newsroom page exists at /newsroom with sections for Industry Updates, New Announcements, Community Spotlights, and Feature Articles, containing at least 2 entries per section (minimum 8 entries total) sourced from a local JSON file.
-22. A Community Hub page exists at /community displaying popular discussions, community recommendations, trending topics, and featured games (display-only).
-23. All game data (exactly 10 fictional games and 3 Play Zone entries) is sourced from local JSON files and not hardcoded in components. Each of the 10 game entries includes: id, title, genre, description, rating, platform(s), release info, cover image, exactly 4 screenshot references, and related game IDs.
-24. The application uses the required tech stack: React.js (CRA or Vite), React Router DOM v6, SCSS/CSS3, Swiper.js, Framer Motion, and React Icons. No backend, database, authentication system, paid library, or game engine is used.
-25. Page transitions and card entrance animations are implemented using Framer Motion, and Swiper.js is used for all horizontal sliders and the hero carousel.
-26. A dark theme is applied globally across all pages with no white or light backgrounds anywhere on the platform.
-27. The color palette is applied consistently using the approved hex codes: #7C3AED (primary — CTAs and highlights), #111827 (background), #06B6D4 (accent — badges and hover glows), and #1F2937 (card/surface backgrounds).
-28. Orbitron (Bold/ExtraBold) is used for all headings and section titles, and Poppins (Regular/Medium/SemiBold) is used for all body text, labels, and descriptions. Both fonts are loaded via Google Fonts.
-29. Typographic hierarchy is maintained: H1 font-size is at least 2.5× body text, H2 is at least 1.75× body text, and H3 is at least 1.25× body text, with body text at 16px on desktop/tablet and no smaller than 14px on mobile.
-30. All margins, paddings, and gaps are multiples of 8px in line with the spacing system (section vertical padding minimum 64px desktop / 40px tablet / 24px mobile; card gutters minimum 16px mobile and 24px desktop).
-31. The layout is fully responsive across mobile (≥320px), tablet (≥768px), and desktop (≥1280px) breakpoints with no horizontal overflow, no clipped elements, and no layout breaks at 100% browser zoom.
-32. All pages load without console errors and contain no broken links.
-33. Each component file is under 200 lines, all hex color values are stored in SCSS variables (not hardcoded in component files), and the project follows the specified folder structure (src/components, src/pages, src/data, src/styles, src/hooks, src/utils).
-34. All named deliverable files follow the GV_ naming convention (e.g., GV_source-code_v1-0_2026-06-20.zip) and the README.md includes setup, run, build, and deployment instructions.
-35. The submission contains no real game titles, copyrighted artwork, branding, or licensed IP. All artwork is original, AI-generated royalty-free, or custom-designed. No layout is copied from existing platforms such as Steam, Epic Games Store, or IGN.
+1. A complete React.js single-page application is delivered with all 13 required pages/sections built and accessible via defined routes.
+2. The application is deployed live on Vercel.
+3. A public GitHub repository is provided with a clean commit history.
+4. The live Vercel URL loads without a 404 or build error.
+5. The Global Navigation bar includes all 9 links: Discover, Collections, Genres, Community Hub, Newsroom, Support, Search, Wishlist, and Profile.
+6. The Global Navigation remains fixed and visible on all pages while the user scrolls.
+7. The Global Navigation includes a hamburger menu that opens and closes the nav links on mobile viewports.
+8. The Hero Showcase is a carousel containing between 3 and 5 featured fictional games from the approved game list.
+9. Each Hero Showcase slide displays a hero artwork image, game title, genre badge, star or numeric rating, a short description of 2 to 3 lines, and an Explore button linking to that game's details page.
+10. The Hero Showcase carousel autoplays without any user input required.
+11. The Hero Showcase carousel supports manual navigation via Swiper.js prev and next controls.
+12. The Discover Collections section contains horizontal sliders for all 6 collections: Editor's Picks, Story-Driven Adventures, Open World Experiences, Competitive Challenges, Community Favorites, and Hidden Gems.
+13. All collection sliders scroll horizontally using Swiper.js.
+14. All game cards inside collection sliders remain fully visible within the slider viewport without clipping or overflow.
+15. The Explore Genres section displays a grid of all 10 genre cards: Action, Adventure, RPG, Racing, Strategy, Sports, Simulation, Sci-Fi, Fantasy, and Indie, each with custom visual artwork.
+16. The Trending Arena section includes tabs or filters for all 4 views: Trending Games, Community Favorites, Most Viewed Titles, and Recommended Experiences.
+17. Each Trending Arena game card displays a cover artwork image, rating, genre label, and platform information.
+18. The Play Zone section displays exactly 3 game cards: Memory Matrix, Quiz Quest, and Cyber Runner, each with the title, genre, and description matching the brief.
+19. Each Play Zone card displays a visible Coming Soon visual treatment such as a muted overlay, lock icon, or status badge.
+20. Play Zone cards do not appear interactive or playable in their default state.
+21. Clicking any Play Zone card opens a modal popup displaying the exact Coming Soon message: This gaming experience is currently under development. Stay tuned for future updates from GameVerse.
+22. The Play Zone modal can be dismissed via a close button or by clicking the background overlay.
+23. The Play Zone modal open action includes a Framer Motion animation.
+24. The Play Zone modal close action includes a Framer Motion animation.
+25. The New Horizons section displays newly released fictional game concepts with artwork, release information, star or numeric rating, and a summary.
+26. The Future Releases section displays upcoming fictional titles with preview artwork, a release window label, genre, and platform availability.
+27. A Game Details page exists at the route /game/:id and loads the correct game data for each of the 10 fictional games.
+28. The Game Details page includes an overview section showing title, description, genre, release info, and platform tags.
+29. The Game Details page includes a media gallery displaying exactly 4 screenshot or promotional artwork images sourced from the game's JSON entry.
+30. The Game Details page includes a community insights section showing a rating summary and at least 2 featured static reviews.
+31. The Game Details page includes a similar titles section showing related game cards.
+32. A Wishlist Center page exists at the route /wishlist and lists all games the user has saved.
+33. Clicking Add to Wishlist on any game card or game details page saves that game's id to browser local storage under the key gameverse_wishlist.
+34. Removing a game from the Wishlist page removes its id from browser local storage.
+35. The wishlist content renders correctly after a full browser refresh, confirming local storage persistence.
+36. A Gamer Profile page exists at the route /profile displaying a user avatar, display username, favorite genre badges, wishlist item count, and a recently viewed games list.
+37. A Newsroom page exists at the route /newsroom with at least 2 entries in each of the 4 sections: Industry Updates, New Announcements, Community Spotlights, and Feature Articles.
+38. A Community Hub page exists at the route /community displaying popular discussions, community recommendations, trending topics, and featured games as display-only content with no user submission functionality.
+39. All game data for the 10 fictional games and the 3 Play Zone entries is loaded from local JSON files and is not hardcoded directly inside React components.
+40. The layout renders without horizontal overflow, clipped text, or overlapping elements at viewport widths of 320px, 768px, and 1280px.
